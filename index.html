@@ -1,0 +1,109 @@
+submit<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Studio Ghibli Movie Generator</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+	<header class="landingPage">
+        <div class="landingPageContent">
+        <div class="miniTotoro"></div>
+            <h1>Studio Ghibli Movie Generator</h1>
+            <p>"To watch a Miyazaki movie is to remember what it was like to be a smart and curious child." - The New York Times</p>
+            <button><a href="#partOne" class="startQuiz">Let's Start!</a></button>
+        </div>
+        <div class="landingPageHeroImage"></div>
+    </header>
+
+	<section id="partOne">
+		<div class="wrapper">
+		<h2>Have you ever watched a Studio Ghibli film?</h2>
+			<form action="#partTwo" method="get" class="partOne">
+	            <div class="choice">
+	                <input type="submit" class="yes" value="Yes">
+	                <h3>Yes</h3>
+	            </div>
+	            <div class="choice">
+	                <input type="submit" class="no" value="No">
+	                <h3>No</h3>
+	            </div>
+			</form>
+	    </div>
+	</section>
+
+	<section  id="partTwo">
+        <div class="wrapper">
+        <h2>Are you feeling something more heavy or light-hearted?</h2>
+		    <form action="#partThree" method="get" class="partTwo">
+                <div class="choice">
+                    <input type="submit" class="heavier" value="Heavier">
+                    <h3>Heavier</h3>
+                 </div>
+                 <div class="choice">
+                    <input type="submit" class="lighter" value="Lighter">
+                    <h3>Lighter</h3>
+                 </div>
+		    </form>
+		</div>
+	</section>
+
+	<section id="partThree">
+	    <div class="wrapper">
+           <h2>Which intrigues you most?</h2>
+            <form action="#partFour" method="get" class="partThree">
+               <div class="choice">
+                    <input type="submit" class="environmentalism" value="Environmentalism">
+                    <h3>Environmentalism</h3>
+                </div>
+                <div class="choice">
+                    <input type="submit" class="war"  value="War">
+                    <h3>War</h3>
+                </div>
+                <div class="choice">
+                    <input type="submit" class="innocence"  value="Innocence">
+                    <h3>Innocence</h3>
+                </div>
+                <div class="choice">
+                    <input type="submit" class="selfDiscovery" value="Self Discovery">
+                    <h3>Self Discovery</h3>
+                </div>
+            </form>
+        </div>
+	</section>
+
+	<section  id="partFour">
+	    <div class="wrapper">
+           <h2>Somewhere more fantastical or familiar?</h2>
+            <form action="#answer" method="get" class="partFour">
+               <div class="choice">
+                    <input type="submit" class="fantastical" value="Fantastical">
+                    <h3>Fantastical</h3>
+                </div>
+                <div class="choice">
+                    <input type="submit" class="familiar" value="Familiar">
+                    <h3>Familiar</h3>	
+                </div>
+            </form>
+        </div>
+	</section>
+
+	<section id="answer">
+	    <div class="wrapper">
+            <div class="result"></div>
+            <h5></h5>
+            <img src="" alt="" class="resultImage">
+            <h6 class="movieDescription"></h6>
+            <button><a href="#partOne" class="startQuiz">Start Over</a></button>
+        </div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	<script src="scripts/jquery.smooth-scroll.js"></script>
+	<script src = "scripts/scripts.js"></script>
+
+</body>
+</html>
